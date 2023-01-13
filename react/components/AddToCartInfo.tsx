@@ -10,7 +10,7 @@ import styles from "./styles.css"
 
 const AddToCartInfo = ({blockClass}:{blockClass: string}) => {
   const container = generateBlockClass(styles.container, blockClass)
-  const container__item = generateBlockClass(styles.container__item, blockClass)
+  // const container__item = generateBlockClass(styles.container__item, blockClass)
   const productInfo = useProduct();
   const { orderForm: {
     items,
@@ -24,7 +24,8 @@ const AddToCartInfo = ({blockClass}:{blockClass: string}) => {
         items.map((item: any, index: number)=>{
           console.log(item)
           return(
-           <div key={index} className="container__item">
+          //  <div key={index} className="container__item">
+           <div key={index} className="">
             <div>
               <img src={item.imageUrls.at1x} />
             </div>
